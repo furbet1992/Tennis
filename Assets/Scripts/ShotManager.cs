@@ -2,17 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
+public class Shot
+{
+    public float upforce;
+    public float hitforce;
+}
+
 public class ShotManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Shot topspin;
+    public Shot flat;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
+
 }

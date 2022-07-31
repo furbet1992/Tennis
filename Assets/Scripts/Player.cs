@@ -13,12 +13,17 @@ public class Player : MonoBehaviour
     public Transform ball; 
     Animator animator;
 
-    Vector3 aimTargetInitialPosition; 
+    Vector3 aimTargetInitialPosition;
+
+    ShotManager shotManager;
+    Shot currentShot; 
 
     void Start()
     {
         animator = GetComponent<Animator>();
-        aimTargetInitialPosition = aimTarget.position; 
+        aimTargetInitialPosition = aimTarget.position;
+        shotManager = GetComponent<ShotManager>();
+        currentShot = shotManager.topspin; 
     }
 
     // Update is called once per frame
@@ -27,12 +32,27 @@ public class Player : MonoBehaviour
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");
 
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetMouseButtonDown(0))
         {
-            hitting = true; 
-        }else if (Input.GetKeyUp(KeyCode.F))
+            hitting = true;
+            currentShot = shotManager.topspin; 
+            //trail renderer to be green
+        }
+        else if (Input.GetMouseButtonUp(0))
         {
             hitting = false; 
+        }
+
+
+        if (Input.GetMouseButtonDown(1))
+        {
+            hitting = true;
+            currentShot = shotManager.flat;
+            //trail renderer to be red
+        }
+        else if (Input.GetMouseButtonUp(1))
+        {
+            hitting = false;
         }
 
         if (hitting)
@@ -46,16 +66,16 @@ public class Player : MonoBehaviour
         }
 
 
-        Vector3 ballDir = ball.position - transform.position;
-        if (ballDir.z >= 0)
-        {
-            Debug.Log("forehand");
-        }
-        else
-        {
-            Debug.Log("backhand");
-        }
-        Debug.DrawRay(transform.position, ballDir); 
+        //Vector3 ballDir = ball.position - transform.position;
+        //if (ballDir.z >= 0)
+        //{
+        //    Debug.Log("forehand");
+        //}
+        //else
+        //{
+        //    Debug.Log("backhand");
+        //}
+        //Debug.DrawRay(transform.position, ballDir); 
     }
 
 
@@ -65,7 +85,7 @@ public class Player : MonoBehaviour
         {
             Debug.Log("detect"); 
             Vector3 dir = aimTarget.position - transform.position;
-            other.GetComponent<Rigidbody>().velocity = dir.normalized * force *2  + new Vector3(0,ballHeight,0);
+            other.GetComponent<Rigidbody>().velocity = dir.normalized * currentShot.hitforce + new Vector3(0,currentShot.upforce,0);
 
             Vector3 ballDir = ball.position - transform.position;
             if(ballDir.z >= 0)
