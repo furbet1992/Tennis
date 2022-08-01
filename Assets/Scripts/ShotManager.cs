@@ -13,7 +13,6 @@ public class ShotManager : MonoBehaviour
 {
     public Shot topspin;
     public Shot flat;
-
-
-
+    public Shot flatServe;
+    public Shot kickServe; 
 }

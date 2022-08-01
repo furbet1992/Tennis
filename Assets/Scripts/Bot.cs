@@ -9,13 +9,17 @@ public class Bot : MonoBehaviour
     public Transform ball; 
     public Transform hitTarget;
 
-    float force = 13; 
+    public Transform[] targets;
 
-    Vector3 targetPosition; 
+    Vector3 targetPosition;
+
+    ShotManager shotManager;
+
     void Start()
     {
         targetPosition = transform.position;
-        animator = GetComponent<Animator>(); 
+        animator = GetComponent<Animator>();
+        shotManager = GetComponent<ShotManager>();
     }
 
     // Update is called once per frame
@@ -30,12 +34,30 @@ public class Bot : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
     }
 
+    Vector3 PickTarget()
+    {
+        int randomValue = Random.Range(0, targets.Length);
+        return targets[randomValue].position; 
+    }
+
+    Shot Pickshot()
+    {
+        int randomValue = Random.Range(0, 2);
+        if (randomValue == 0)
+            return shotManager.topspin;
+        else 
+            return shotManager.flat; 
+    }
+
+
     private void OnTriggerEnter(Collider other)
     { 
         if (other.CompareTag("Ball"))
         {
-            Vector3 dir = hitTarget.position - transform.position;
-            other.GetComponent<Rigidbody>().velocity = dir.normalized * force + new Vector3(0,8,0);
+            Shot currentShot = Pickshot(); 
+
+            Vector3 dir = PickTarget() - transform.position; //get the direction to where to send the ball 
+            other.GetComponent<Rigidbody>().velocity = dir.normalized * currentShot.hitforce + new Vector3(0, currentShot.upforce, 0);
 
             Vector3 ballDir = ball.position - transform.position;
             if(ballDir.x >= 0)
