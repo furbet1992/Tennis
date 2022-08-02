@@ -7,7 +7,9 @@ public class AdrenalineBar : MonoBehaviour
 {
     public Slider slider;
     public Gradient gradient;
-    public Image fill; 
+    public Image fill;
+
+
 
     public void SetMaxAdrenaline(int Adrenaline)
     {
@@ -29,6 +31,15 @@ public class AdrenalineBar : MonoBehaviour
 
         fill.color = gradient.Evaluate(slider.normalizedValue); 
     }
+
+    public void UseAdrenaline (int amount)
+    {
+
+    }
+
+    
+
+
      
 
 }
