@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI; 
 
 public class Player : MonoBehaviour
 {
@@ -17,13 +18,21 @@ public class Player : MonoBehaviour
 
     ShotManager shotManager;
     Shot currentShot;
+    public int flatShotCount; 
 
     public AdrenalineBar adrenalineBar;
     public int maxAdrenaline = 100;
     public int minAdrenaline = 0; 
     public int currentAdrenaline;
 
-    public ParticleSystem adrenalineParticle; 
+    public ParticleSystem adrenalineParticle;
+
+    [SerializeField] Transform serveRight;
+    [SerializeField] Transform serveLeft;
+
+    bool servedRight = true;
+
+    public Text stringBrokenText; 
 
 
     void Start()
@@ -42,6 +51,11 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(flatShotCount == 3)
+        {
+            stringBrokenText.text = "String Snapped, Change Racquet".ToString();
+            Time.timeScale = 0; 
+        }
 
             float h = Input.GetAxisRaw("Horizontal");
             float v = Input.GetAxisRaw("Vertical");
@@ -50,7 +64,8 @@ public class Player : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             hitting = true;
-            currentShot = shotManager.topspin; 
+            currentShot = shotManager.topspin;
+            flatShotCount++; 
             //trail renderer to be green
         }
         else if (Input.GetMouseButtonUp(0))
@@ -63,6 +78,7 @@ public class Player : MonoBehaviour
         {
             hitting = true;
             currentShot = shotManager.flat;
+
             //trail renderer to be red
         }
         else if (Input.GetMouseButtonUp(1))
@@ -92,8 +108,11 @@ public class Player : MonoBehaviour
             hitting = false;
             ball.transform.position = transform.position + new Vector3(0.2f, 3f, 0);
             Vector3 dir = aimTarget.position - transform.position;
-            ball.GetComponent<Rigidbody>().velocity = dir.normalized * currentShot.hitforce + new Vector3(0, currentShot.upforce, 0);
+            ball.GetComponent<Rigidbody>().velocity = dir.normalized * currentShot.hitforce + new Vector3(0, currentShot.upforce, 0);            
             animator.Play("Serve");
+            ball.GetComponent<Ball>().hitter = "Player";
+            ball.GetComponent<Ball>().playing = true;
+
         }
 
         if (hitting)
@@ -146,6 +165,7 @@ public class Player : MonoBehaviour
             {
             animator.Play("Backhand");
             }
+            ball.GetComponent<Ball>().hitter = "Player"; 
             aimTarget.position = aimTargetInitialPosition;
             IncreaseAD(10);       
         }
@@ -155,5 +175,15 @@ public class Player : MonoBehaviour
     {
         currentAdrenaline += adrenaline;
         adrenalineBar.SetAdrenaline(currentAdrenaline); 
+    }
+
+    public void Reset()
+    {
+        if (servedRight)
+            transform.position = serveLeft.position;
+        else
+            transform.position = serveRight.position;
+
+        servedRight = !servedRight; 
     }
 }
