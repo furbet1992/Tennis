@@ -4,13 +4,14 @@ using UnityEngine;
 //using UnityEngine.InputSystem; 
 public class BallToss : MonoBehaviour
 {
+    public float serveSpeed;
     public float speed;
+
     public float tossSpeed;
     Rigidbody rb;
 
     //Tosser tossControl;
-    Vector2 move; 
-
+    Vector2 move;
 
     private void Awake()
     {
@@ -46,14 +47,24 @@ public class BallToss : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector2 m = new Vector2(move.x, move.y) * Time.deltaTime;
-        transform.Translate(m, Space.World); 
-        //float horizontalInput = Input.GetAxis("Horizontal");
-        //float verticalInput = Input.GetAxis("Vertical");
+        float horizontalInput = Input.GetAxis("Horizontal");
+        float verticalInput = Input.GetAxis("Vertical");
 
-        //Vector3 movementDirection = new Vector3(horizontalInput, 0, verticalInput);
-        //movementDirection.Normalize();
-        //transform.Translate(movementDirection * speed * Time.deltaTime);
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            ballTossing(); 
+        }
+        else if (Input.GetKeyUp(KeyCode.Space))
+        {
+            rb.velocity = this.gameObject.transform.forward * serveSpeed;
+        }
+        //Vector2 m = new Vector2(move.x, move.y) * Time.deltaTime;
+        //transform.Translate(m, Space.World); 
+
+
+        Vector3 movementDirection = new Vector3(horizontalInput, 0, verticalInput);
+        movementDirection.Normalize();
+        transform.Translate(movementDirection * speed * Time.deltaTime);
 
 
 
