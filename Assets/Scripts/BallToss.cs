@@ -16,11 +16,6 @@ public class BallToss : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
-        //tossControl = new Tosser();
-        //tossControl.Toss.Tossing.performed += ctx => ballTossing();
-
-        //tossControl.Toss.Movement.performed += ctx => move = ctx.ReadValue<Vector2>();
-        //tossControl.Toss.Movement.canceled += ctx => move = Vector2.zero; 
     }
 
     void ballTossing()
@@ -28,23 +23,6 @@ public class BallToss : MonoBehaviour
         rb.velocity = transform.transform.up * tossSpeed;
     }
 
-     void OnEnable()
-    {
-        //tossControl.Toss.Enable(); 
-    }
-
-    void OnDisable()
-    {
-        //tossControl.Toss.Disable();
-    }
-
-
-    //void Start()
-    //{
-    //    rb = GetComponent<Rigidbody>(); 
-    //}
-
-    // Update is called once per frame
     void Update()
     {
         float horizontalInput = Input.GetAxis("Horizontal");
@@ -58,20 +36,20 @@ public class BallToss : MonoBehaviour
         {
             rb.velocity = this.gameObject.transform.forward * serveSpeed;
         }
-        //Vector2 m = new Vector2(move.x, move.y) * Time.deltaTime;
-        //transform.Translate(m, Space.World); 
-
 
         Vector3 movementDirection = new Vector3(horizontalInput, 0, verticalInput);
         movementDirection.Normalize();
         transform.Translate(movementDirection * speed * Time.deltaTime);
 
+        
+    }
 
-
-        //if (Input.GetKeyDown(KeyCode.Space))
-        //{
-        //    rb.velocity = transform.transform.up * tossSpeed;
-        //}
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.name == "ServiceBoxLine")
+        {
+            serveSpeed *= 2; 
+        }
     }
 
     //void Grow()
@@ -82,6 +60,6 @@ public class BallToss : MonoBehaviour
     //    //{
     //    //    transform.localScale *= 0.4f; 
     //    //}
-  
+
     //}
 }
