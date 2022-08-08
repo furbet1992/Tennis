@@ -50,12 +50,10 @@ public class Player : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-<<<<<<< Updated upstream
+    { 
         //if(flatShotCount == 6)
-=======
         //if(flatShotCount == 3)
->>>>>>> Stashed changes
+
         //{
         //    stringBrokenText.text = "String Snapped, Change Racquet".ToString();
         //    Time.timeScale = 0; 
