@@ -639,6 +639,8 @@ MonoBehaviour:
     m_NumColorKeys: 3
     m_NumAlphaKeys: 2
   fill: {fileID: 1352497209}
+  maxAdrenaline: 100
+  minAdrenaline: 0
 --- !u!114 &283796441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7992,9 +7994,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1887672023}
   serializedVersion: 2
-  m_Mass: 0.5
+  m_Mass: 0.38
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0.07
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -8765,6 +8767,8 @@ MonoBehaviour:
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   fill: {fileID: 0}
+  maxAdrenaline: 100
+  minAdrenaline: 0
 --- !u!114 &2138312601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9004,12 +9008,20 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3572944418799689743, guid: 5dbf236fd7428d247865a0b9488c1524, type: 3}
+      propertyPath: m_Size.y
+      value: 3.2381363
+      objectReference: {fileID: 0}
+    - target: {fileID: 3572944418799689743, guid: 5dbf236fd7428d247865a0b9488c1524, type: 3}
       propertyPath: m_Size.z
       value: 1.9409156
       objectReference: {fileID: 0}
     - target: {fileID: 3572944418799689743, guid: 5dbf236fd7428d247865a0b9488c1524, type: 3}
       propertyPath: m_Center.x
       value: 0.20972013
+      objectReference: {fileID: 0}
+    - target: {fileID: 3572944418799689743, guid: 5dbf236fd7428d247865a0b9488c1524, type: 3}
+      propertyPath: m_Center.y
+      value: 0.7514551
       objectReference: {fileID: 0}
     - target: {fileID: 3572944418799689743, guid: 5dbf236fd7428d247865a0b9488c1524, type: 3}
       propertyPath: m_Center.z
@@ -9059,9 +9071,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3572944418799689746, guid: 5dbf236fd7428d247865a0b9488c1524, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3572944418799689749, guid: 5dbf236fd7428d247865a0b9488c1524, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3572944418799689749, guid: 5dbf236fd7428d247865a0b9488c1524, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3572944418799689749, guid: 5dbf236fd7428d247865a0b9488c1524, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 3572944419473726325, guid: 5dbf236fd7428d247865a0b9488c1524, type: 3}
       propertyPath: m_LocalPosition.x

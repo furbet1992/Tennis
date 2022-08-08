@@ -9,6 +9,9 @@ public class AdrenalineBar : MonoBehaviour
     public Gradient gradient;
     public Image fill;
 
+    public int maxAdrenaline = 100;
+    public int minAdrenaline = 0;
+
 
 
     public void SetMaxAdrenaline(int Adrenaline)

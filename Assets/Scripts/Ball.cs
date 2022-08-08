@@ -35,6 +35,7 @@ public class Ball : MonoBehaviour
         {
             transform.position = initialPos;
         }
+
     }
 
     private void OnCollisionEnter(Collision collision)

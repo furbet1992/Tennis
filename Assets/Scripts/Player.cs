@@ -51,7 +51,11 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+<<<<<<< Updated upstream
         //if(flatShotCount == 6)
+=======
+        //if(flatShotCount == 3)
+>>>>>>> Stashed changes
         //{
         //    stringBrokenText.text = "String Snapped, Change Racquet".ToString();
         //    Time.timeScale = 0; 
@@ -106,6 +110,7 @@ public class Player : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.R) || Input.GetKeyUp(KeyCode.T))
         {
             hitting = false;
+            GetComponent<BoxCollider>().enabled = true;
             ball.transform.position = transform.position + new Vector3(0.2f, 3f, 0);
             GetComponent<BoxCollider>().enabled = true;
             Vector3 dir = aimTarget.position - transform.position;
