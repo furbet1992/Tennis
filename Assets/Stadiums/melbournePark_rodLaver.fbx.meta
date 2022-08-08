@@ -1,0 +1,466 @@
+fileFormatVersion: 2
+guid: f50fe932f0b3fcf4bb7aa6429b3abb91
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: blue_noodles1
+    100002: bunker1
+    100004: bunker2_DUP
+    100006: camera_stand1
+    100008: camera_stand2
+    100010: cameramanseat
+    100012: cameramanseatthingo1
+    100014: camerastationthingo
+    100016: field
+    100018: field_field
+    100020: fieldmarkings1
+    100022: melbournePark
+    100024: //RootNode
+    100026: panel_cap
+    100028: pPlane1
+    100030: railing2
+    100032: railing3
+    100034: roof14
+    100036: rubber_thing1
+    100038: sponsor_videoscreen_BLACK
+    100040: steps6_DUP
+    100042: steps6_DUP1
+    100044: steps6_DUP2
+    100046: steps6_DUP3
+    100048: tunnel1
+    100050: tunnel5
+    100052: tunnel6
+    100054: tunnel7
+    100056: wall1
+    100058: wall_panel
+    100060: crowd_sitting_side_a0
+    100062: crowd_sitting_side_a1
+    100064: crowd_sitting_side_a2
+    100066: crowd_sitting_side_a3
+    100068: seats3
+    100070: seats4
+    100072: seats5
+    100074: seats6
+    100076: barrierAO48m24
+    100078: aoumpirechair
+    100080: LCD_WALL
+    400000: blue_noodles1
+    400002: bunker1
+    400004: bunker2_DUP
+    400006: camera_stand1
+    400008: camera_stand2
+    400010: cameramanseat
+    400012: cameramanseatthingo1
+    400014: camerastationthingo
+    400016: field
+    400018: field_field
+    400020: fieldmarkings1
+    400022: melbournePark
+    400024: //RootNode
+    400026: panel_cap
+    400028: pPlane1
+    400030: railing2
+    400032: railing3
+    400034: roof14
+    400036: rubber_thing1
+    400038: sponsor_videoscreen_BLACK
+    400040: steps6_DUP
+    400042: steps6_DUP1
+    400044: steps6_DUP2
+    400046: steps6_DUP3
+    400048: tunnel1
+    400050: tunnel5
+    400052: tunnel6
+    400054: tunnel7
+    400056: wall1
+    400058: wall_panel
+    400060: crowd_sitting_side_a0
+    400062: crowd_sitting_side_a1
+    400064: crowd_sitting_side_a2
+    400066: crowd_sitting_side_a3
+    400068: seats3
+    400070: seats4
+    400072: seats5
+    400074: seats6
+    400076: barrierAO48m24
+    400078: aoumpirechair
+    400080: LCD_WALL
+    2300000: blue_noodles1
+    2300002: bunker1
+    2300004: bunker2_DUP
+    2300006: camera_stand1
+    2300008: camera_stand2
+    2300010: cameramanseat
+    2300012: cameramanseatthingo1
+    2300014: camerastationthingo
+    2300016: field_field
+    2300018: fieldmarkings1
+    2300020: panel_cap
+    2300022: pPlane1
+    2300024: railing2
+    2300026: railing3
+    2300028: roof14
+    2300030: rubber_thing1
+    2300032: sponsor_videoscreen_BLACK
+    2300034: steps6_DUP
+    2300036: steps6_DUP1
+    2300038: steps6_DUP2
+    2300040: steps6_DUP3
+    2300042: tunnel1
+    2300044: tunnel5
+    2300046: tunnel6
+    2300048: tunnel7
+    2300050: wall1
+    2300052: wall_panel
+    2300054: crowd_sitting_side_a0
+    2300056: crowd_sitting_side_a1
+    2300058: crowd_sitting_side_a2
+    2300060: crowd_sitting_side_a3
+    2300062: seats3
+    2300064: seats4
+    2300066: seats5
+    2300068: seats6
+    2300070: barrierAO48m24
+    2300072: aoumpirechair
+    2300074: LCD_WALL
+    3300000: blue_noodles1
+    3300002: bunker1
+    3300004: bunker2_DUP
+    3300006: camera_stand1
+    3300008: camera_stand2
+    3300010: cameramanseat
+    3300012: cameramanseatthingo1
+    3300014: camerastationthingo
+    3300016: field_field
+    3300018: fieldmarkings1
+    3300020: panel_cap
+    3300022: pPlane1
+    3300024: railing2
+    3300026: railing3
+    3300028: roof14
+    3300030: rubber_thing1
+    3300032: sponsor_videoscreen_BLACK
+    3300034: steps6_DUP
+    3300036: steps6_DUP1
+    3300038: steps6_DUP2
+    3300040: steps6_DUP3
+    3300042: tunnel1
+    3300044: tunnel5
+    3300046: tunnel6
+    3300048: tunnel7
+    3300050: wall1
+    3300052: wall_panel
+    3300054: crowd_sitting_side_a0
+    3300056: crowd_sitting_side_a1
+    3300058: crowd_sitting_side_a2
+    3300060: crowd_sitting_side_a3
+    3300062: seats3
+    3300064: seats4
+    3300066: seats5
+    3300068: seats6
+    3300070: barrierAO48m24
+    3300072: aoumpirechair
+    3300074: LCD_WALL
+    4300000: blue_noodles1
+    4300002: cameramanseatthingo1
+    4300004: camera_stand2
+    4300006: camerastationthingo
+    4300008: camera_stand1
+    4300010: wall_panel
+    4300012: tunnel1
+    4300014: panel_cap
+    4300016: rubber_thing1
+    4300018: wall1
+    4300020: bunker1
+    4300022: roof14
+    4300024: steps6_DUP
+    4300026: bunker2_DUP
+    4300028: cameramanseat
+    4300030: sponsor_videoscreen_BLACK
+    4300032: steps6_DUP1
+    4300034: steps6_DUP2
+    4300036: steps6_DUP3
+    4300038: railing3
+    4300040: railing2
+    4300042: tunnel5
+    4300044: tunnel6
+    4300046: tunnel7
+    4300048: fieldmarkings1
+    4300050: pPlane1
+    4300052: field_field
+    4300054: crowd_sitting_side_a0
+    4300056: crowd_sitting_side_a1
+    4300058: crowd_sitting_side_a2
+    4300060: crowd_sitting_side_a3
+    4300062: seats6
+    4300064: seats4
+    4300066: seats3
+    4300068: seats5
+    4300070: barrierAO48m24
+    4300072: aoumpirechair
+    4300074: LCD_WALL
+    6400000: aoumpirechair
+    6400002: barrierAO48m24
+    6400004: blue_noodles1
+    6400006: bunker1
+    6400008: bunker2_DUP
+    6400010: camera_stand1
+    6400012: camera_stand2
+    6400014: cameramanseat
+    6400016: cameramanseatthingo1
+    6400018: camerastationthingo
+    6400020: crowd_sitting_side_a0
+    6400022: crowd_sitting_side_a1
+    6400024: crowd_sitting_side_a2
+    6400026: crowd_sitting_side_a3
+    6400028: field_field
+    6400030: fieldmarkings1
+    6400032: panel_cap
+    6400034: pPlane1
+    6400036: railing2
+    6400038: railing3
+    6400040: rubber_thing1
+    6400042: seats3
+    6400044: seats4
+    6400046: seats5
+    6400048: seats6
+    6400050: sponsor_videoscreen_BLACK
+    6400052: steps6_DUP
+    6400054: steps6_DUP1
+    6400056: steps6_DUP2
+    6400058: steps6_DUP3
+    6400060: tunnel1
+    6400062: tunnel5
+    6400064: tunnel6
+    6400066: tunnel7
+    6400068: wall1
+    6400070: wall_panel
+    6400072: LCD_WALL
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Crowd1
+    second: {fileID: 2100000, guid: f503fcbe02b85334fb11d3d32874ade3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Crowd2
+    second: {fileID: 2100000, guid: d3e997cd36de63140bc91ad18af67e8d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Crowd3
+    second: {fileID: 2100000, guid: afeebc95888810344836db3f718bc1d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Crowd4
+    second: {fileID: 2100000, guid: 1dcfe52c7719f7f4b86563bdcdcafe7b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: __fieldmarkings_nrl_rep_stateoforigin
+    second: {fileID: 2100000, guid: a6bb5d25cc8f61243b9d91024c3821bd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: a_AO_UmpireChair1
+    second: {fileID: 2100000, guid: 5c850279ffbfe9345b47b98f9788560c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: a_a_lcd_test1
+    second: {fileID: 2100000, guid: 75e4e765028f24e4bbf4b35019e660e9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: a_lcd_test1
+    second: {fileID: 2100000, guid: 1042848aae67b6444950ce04aac20266, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: a_lcd_test2
+    second: {fileID: 2100000, guid: 4dbcfe6f75df83a40b658b63feade1a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: a_phong1
+    second: {fileID: 2100000, guid: 77eb90a068ab6654f903ffb9ecdeabc4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: a_phong2
+    second: {fileID: 2100000, guid: d1f5fa2fa05bd8c4fa7c7569f4662c8a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lcd_east
+    second: {fileID: 2100000, guid: 4dbcfe6f75df83a40b658b63feade1a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lcd_north
+    second: {fileID: 2100000, guid: 1042848aae67b6444950ce04aac20266, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lcd_south
+    second: {fileID: 2100000, guid: ce99f088cd64ac64996e649212275310, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lcd_west
+    second: {fileID: 2100000, guid: 1bcffa393a5caae45962450c95a93300, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: phong1
+    second: {fileID: 2100000, guid: 2166e0021f53317448b59f5745cd1cbe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: phong10
+    second: {fileID: 2100000, guid: 47e68feb45f8c0e46b0a45d9c482cfd8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: phong11
+    second: {fileID: 2100000, guid: 8777935b1a4a6d4448aa32752ccd9f50, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: phong12
+    second: {fileID: 2100000, guid: 9f18b03d73b118d4c99d665452d00c1c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: phong13
+    second: {fileID: 2100000, guid: 2bd17d5647b579646b715445b5f893a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: phong14
+    second: {fileID: 2100000, guid: 28296713d551b5f458b17020122d0a7b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: phong17
+    second: {fileID: 2100000, guid: 343c776f5f9aee8499729dad3b4effcd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: phong19
+    second: {fileID: 2100000, guid: 88ef3aec44f46994f8c0e54a85fc7f9c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: phong2
+    second: {fileID: 2100000, guid: ce799aa9814b9054d8af61e6c395cdc0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: phong21
+    second: {fileID: 2100000, guid: f9bfb3f9eb801e941855f42b89fd851d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: phong22
+    second: {fileID: 2100000, guid: f5662e8fffaf6664a979444d84459b7f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: phong3
+    second: {fileID: 2100000, guid: 6e0b58c14aa103044a1a8d5bdd7e35b3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: phong8
+    second: {fileID: 2100000, guid: 179a68709cda92741b2abe462ff5b16c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: phong9
+    second: {fileID: 2100000, guid: 33720ccb93ef00b469739d18b963ab7b, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 2
+    addColliders: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

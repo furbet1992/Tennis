@@ -13,9 +13,23 @@ public class BallToss : MonoBehaviour
     //Tosser tossControl;
     Vector2 move;
 
+    public Shot currentShot;
+    ShotManager shotManager;
+
+
+
+    //Landmarks within ServiceBox
+    Vector3 TargetPosition;
+    public Transform downlineTarget; 
+
+
+
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        TargetPosition = downlineTarget.position;
+        shotManager = GetComponent<ShotManager>(); 
     }
 
     void ballTossing()
@@ -32,10 +46,10 @@ public class BallToss : MonoBehaviour
         {
             ballTossing(); 
         }
-        else if (Input.GetKeyUp(KeyCode.Space))
-        {
-            rb.velocity = this.gameObject.transform.forward * serveSpeed;
-        }
+        //else if (Input.GetKeyUp(KeyCode.Space))
+        //{
+        //   // rb.velocity = this.gameObject.transform.forward * serveSpeed;
+        //}
 
         Vector3 movementDirection = new Vector3(horizontalInput, 0, verticalInput);
         movementDirection.Normalize();
@@ -46,9 +60,11 @@ public class BallToss : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.name == "ServiceBoxLine")
+        if(other.name == "ServiceBoxLine" || Input.GetKeyUp(KeyCode.Space))
         {
-            serveSpeed *= 2; 
+            Vector3 dir = downlineTarget.position - transform.position;
+            this.GetComponent<Rigidbody>().velocity = dir.normalized * currentShot.hitforce + new Vector3(0, currentShot.upforce, 0);
+            serveSpeed *= 2;
         }
     }
 
