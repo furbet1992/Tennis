@@ -91,5 +91,4 @@ public class BallToss : MonoBehaviour
                 gameObject.GetComponent<Rigidbody>().velocity = dirCorner.normalized * currentShot.hitforce + new Vector3(0, currentShot.upforce, 0);
                 serveSpeed *= 2;
     }
-
 }
