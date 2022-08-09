@@ -110,7 +110,6 @@ public class Player : MonoBehaviour
             hitting = false;
             GetComponent<BoxCollider>().enabled = true;
             ball.transform.position = transform.position + new Vector3(0.2f, 3f, 0);
-            GetComponent<BoxCollider>().enabled = true;
             Vector3 dir = aimTarget.position - transform.position;
             ball.GetComponent<Rigidbody>().velocity = dir.normalized * currentShot.hitforce + new Vector3(0, currentShot.upforce, 0);            
             animator.Play("Serve");
