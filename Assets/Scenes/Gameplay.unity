@@ -6449,7 +6449,7 @@ MonoBehaviour:
     hitforce: 19
   flatServe:
     upforce: 0.3
-    hitforce: 24
+    hitforce: 50
   kickServe:
     upforce: 0.3
     hitforce: 24
@@ -8025,8 +8025,8 @@ Rigidbody:
   m_GameObject: {fileID: 1887672023}
   serializedVersion: 2
   m_Mass: 0.38
-  m_Drag: 0
-  m_AngularDrag: 0.07
+  m_Drag: 0.15
+  m_AngularDrag: 0
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
