@@ -5,19 +5,25 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/Menu.unity
-    guid: 1b460e373cea0c74aa07c72aff2a96de
-  - enabled: 1
-    path: Assets/Scenes/StartScene.unity
-    guid: fd6c4ba1e1cd15042a45c914c96bb8b9
+    path: Assets/Scenes/StartMenu.unity
+    guid: 55efdb9dcdf06de428a678b65e2ec76b
   - enabled: 1
     path: Assets/Scenes/StringOption.unity
-    guid: 6973103eb4adbf8409c8e452352bef04
-  - enabled: 1
-    path: Assets/Scenes/Grip.unity
-    guid: f0e3f4c3f8e0ebe4e828188e973c9d23
+    guid: a26cddf59bc90b84ba2d0b0f92eada75
   - enabled: 1
     path: Assets/Scenes/Gameplay.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/CareerMode.unity
+    guid: 2d49b11678409cb4984655081616e908
+  - enabled: 1
+    path: Assets/Scenes/CareerMode_Tutorial.unity
+    guid: a76706e9df7758246b1d57c438ae376a
   m_configObjects: {}
