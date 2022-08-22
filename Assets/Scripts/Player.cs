@@ -115,7 +115,6 @@ public class Player : MonoBehaviour
             animator.Play("Serve");
             ball.GetComponent<Ball>().hitter = "Player";
             ball.GetComponent<Ball>().playing = true;
-
         }
 
         if (hitting)
