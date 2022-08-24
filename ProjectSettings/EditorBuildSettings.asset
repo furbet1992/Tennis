@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Career/CareerMode_Tutorial.unity
     guid: a76706e9df7758246b1d57c438ae376a
+  - enabled: 1
+    path: Assets/Scenes/Career/LockerRoom.unity
+    guid: 4541254bb8f670c42b5752d6772d3516
   m_configObjects: {}
