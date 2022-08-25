@@ -27,8 +27,17 @@ public class IntialScene : MonoBehaviour
     {
         yield return new WaitForSeconds(2);
         Debug.Log("come and watch me play when you’re ready mate. Let me show you what a world ranked 200 plays. before your ATP debut"); 
-        animTrainer.Play("Jack_Trainer_first"); 
+        animTrainer.Play("Jack_Trainer_first");
+        StartCoroutine(mainCameraReverse());
     }
+
+    IEnumerator mainCameraReverse()
+    {
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene(sceneBuildIndex: 4); 
+    }
+
+
 
 
 }
