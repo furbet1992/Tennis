@@ -9,6 +9,9 @@ public class Player : MonoBehaviour
     public float speed;
     // public float force;
     //public float ballHeight; 
+    public float maxPower;
+    public float currentPower;
+    private bool pressingButtonDown = false; 
     
     bool hitting;
     public Transform ball; 
@@ -65,6 +68,16 @@ public class Player : MonoBehaviour
         //FlatHit
         if (Input.GetMouseButtonDown(0))
         {
+            //charge power. release mouse button to perform a hit. ball is hitable
+            pressingButtonDown = true; 
+            if(pressingButtonDown == true)
+            {
+                hitting = true;
+
+
+            }
+
+
             hitting = true;
             currentShot = shotManager.topspin;
             flatShotCount++; 
