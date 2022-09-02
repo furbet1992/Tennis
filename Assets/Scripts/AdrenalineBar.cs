@@ -31,7 +31,6 @@ public class AdrenalineBar : MonoBehaviour
     public void SetAdrenaline(int Adrenaline)
     {
         slider.value = Adrenaline;
-
         fill.color = gradient.Evaluate(slider.normalizedValue); 
     }
 

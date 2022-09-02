@@ -34,7 +34,7 @@ public class IntialScene : MonoBehaviour
     IEnumerator mainCameraReverse()
     {
         yield return new WaitForSeconds(1);
-        SceneManager.LoadScene(sceneBuildIndex: 4); 
+        SceneManager.LoadScene(sceneBuildIndex: 3); 
     }
 
 

@@ -7,10 +7,6 @@ public class Player : MonoBehaviour
 {
     public Transform aimTarget; 
     public float speed;
-    // public float force;
-    //public float ballHeight; 
-    public float maxPower;
-    public float currentPower;
     private bool pressingButtonDown = false; 
     
     bool hitting;
@@ -73,8 +69,6 @@ public class Player : MonoBehaviour
             if(pressingButtonDown == true)
             {
                 hitting = true;
-
-
             }
 
 
@@ -182,6 +176,7 @@ public class Player : MonoBehaviour
             }
             ball.GetComponent<Ball>().hitter = "Player"; 
             aimTarget.position = aimTargetInitialPosition;
+
             IncreaseAD(10);       
         }
     }
