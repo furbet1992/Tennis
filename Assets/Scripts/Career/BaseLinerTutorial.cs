@@ -10,7 +10,9 @@ public class BaseLinerTutorial : MonoBehaviour
     public Text tuteScoreText;
     public GameObject levelCompleteText; 
 
-    bool hasIntercepted; 
+    bool hasIntercepted;
+
+    public UITute uiTextsEnable;
 
 
     void Start()
@@ -21,10 +23,10 @@ public class BaseLinerTutorial : MonoBehaviour
 
     public void Update()
     {
-        Debug.Log(currrentStage); 
         if (currrentStage == completeStage)
         {
-            levelCompleteText.SetActive(true); 
+            levelCompleteText.SetActive(true);
+            uiTextsEnable.EnableOffensiveText(); 
         }
     }
 
