@@ -61,6 +61,7 @@ public class BallToss : MonoBehaviour
         if (other.name == "ServiceBoxLine")
         {
             {
+                Debug.Log("serviceHit"); 
                 gameObject.transform.position = transform.position + new Vector3(0, 1.5f, 0);
                 StartCoroutine(ServeDownLine()); 
             }
