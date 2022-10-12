@@ -39,21 +39,25 @@ public class BallToss : MonoBehaviour
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
 
-        if (Input.GetKey(KeyCode.Space))
-        {
-            balltossing(); 
-            Vector3 movementDirection = new Vector3(horizontalInput, 0, verticalInput);
-            movementDirection.Normalize();
-            transform.Translate(movementDirection * speed * Time.deltaTime);
-           // ballTossing(); 
-        }
+        Vector3 movementDirection = new Vector3(horizontalInput, 0, verticalInput);
+        movementDirection.Normalize();
+        transform.Translate(movementDirection * speed/2 * Time.deltaTime);
+
+        //if (Input.GetKey(KeyCode.Space))
+        //{
+        //    balltossing(); 
+        //    Vector3 movementDirection = new Vector3(horizontalInput, 0, verticalInput);
+        //    movementDirection.Normalize();
+        //    transform.Translate(movementDirection * speed * Time.deltaTime);
+        //   // ballTossing(); 
+        //}
 
     }
 
-    void balltossing()
-    {
-        rb.velocity = transform.transform.up * tossSpeed;
-    }
+    //void balltossing()
+    //{
+    //    rb.velocity = transform.transform.up * tossSpeed;
+    //}
 
 
     private void OnTriggerEnter(Collider other)
